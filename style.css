@@ -38,6 +38,7 @@ html,body{
 }
 #toppanel #play{
     height: 4vh;
+    width:15vh
     background-color: white;
     border-radius: 5px;
     color: #1d5428;
