@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(98, 186, 98, 0.927);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#panel{
+    width: 90vw;
+    height: 90vh;
+    background-color: rgb(182, 232, 182);
+    display: flex;
+    border-radius: 2vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+#toppanel{
+    width: 100%;
+    height: 6.5%;
+    background-color: rgb(18, 121, 18);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(23, 18, 18);
+    font-size: smaller;
+    
+}
+#toppanel #play{
+    height: 4vh;
+    width: 15vw;
+    background-color: white;
+    border-radius: 5px;
+    color: #1d5428;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #bee7c1;
+}
+#elem{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    gap:1vh;
+    font-size: 200%;
+    font-weight: 100;
+    
+}
+#box{
+    height: 4vh;
+    width:4.7vw ;
+    border-radius: 2px;
+    background-color:#fff;
+    color: rgb(11, 75, 11);
+    text-align: center;
+    font-size: 2vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+/* #bottompannel{
+    padding: 0.3vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0.1vw;
+    flex-wrap: wrap;
+} */
+ 
+/* #bubble{
+    height: 3.952vmax;
+    width: 3.952vmax;
+    background-color: #519a57;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmax;
+}
+#bubble:hover{
+    background-color: #1d5428;
+    cursor: pointer;
+} */
+#bottompannel {
+    padding: 0.3vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0.5vw; /* Added larger gap for better spacing */
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    /* Align bubbles to the top of the panel*/
+}
+#bottompannel #game{
+    font-size: 10vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #04300c;
+}
+#bottompannel #game1{
+    text-align: center;
+    font-size: 7vw;
+    font-weight: 500;
+    color: #04300c;
+}
+#bubble {
+    flex: 0 1 calc(8% - 1vw); /* Adjusted size, allowing bubbles to fit better within the panel */
+    aspect-ratio: 1 / 1; /* Ensures bubbles stay circular */
+    background-color: #519a57;
+    border-radius: 50%;
+    color: white;;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmax;
+}
+
+#bubble:hover {
+    background-color: #1d5428;
+    cursor: pointer;
+}
+@media (min-width: 1200px) {
+    #bubble {
+        flex: 0 1 calc(5% - 1vw); /* Smaller size for larger screens */
+        font-size: 1.2vmax; /* Adjust font size accordingly */
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+    #bubble {
+        flex: 0 1 calc(10% - 1vw); /* Larger size for smaller screens */
+        font-size: 2vmax; /* Adjust font size accordingly */
+    }
+}
+
